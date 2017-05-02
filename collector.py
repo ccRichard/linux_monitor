@@ -125,7 +125,7 @@ def main():
             print(os.getpid())
             print('system and process stats have be collected completely!')
             send_reports([test_config['sys_output'], test_config['process_output']],
-                         '100.84.47.220', '5000')
+                         '127.0.0.1', '5000')
     else:
         print('can not create temp config file!')
 
